@@ -10,20 +10,21 @@ import static spark.Spark.*;
  */
 public class App {
     /**
+     * Aplicacion principal que se carga del funcionamiento principal del programa
      */
     private static Calculadora calc = new Calculadora();
     public static void main(String[] args) {
         port(getPort());
-        get("/ln", (req, res) -> inputDataPage(req, res,"ln"));
-        get("/exp", (req, res) -> inputDataPage(req, res,"exp"));
+        get("/ln", (req, res) -> response(req, res,"ln"));
+        get("/exp", (req, res) -> response(req, res,"exp"));
     }
     /**
-     * @param req
-     * @param res
-     * @param operation
-     * @return  JSONObject
+     * @param req Parametro request de spark
+     * @param res Parametro responde sde spark
+     * @param operation  Indica el tipo de operacion a realizar
+     * @return  JSONObject objeto JSON con las operaciones correspondientes
      */
-    private static JSONObject inputDataPage(Request req, Response res,String operation) {
+    private static JSONObject response(Request req, Response res,String operation) {
         JSONObject JSON = new JSONObject();
         double n = Double.parseDouble(req.queryParams("value"));
         JSON.put("operation",operation);

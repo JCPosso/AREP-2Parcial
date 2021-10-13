@@ -63,12 +63,12 @@ ejecutamos los siguientes comandos y obtendremos los siguientes resultados:
 ```
 docker images
 ```
-
-![docker-ps](/img/dockerps.png)
-
 ```
 docker ps
 ```
+
+![docker-ps](/img/dockerps.png)
+
 ### Pruebas
 Si está corriendo la imagen correctamente con Docker,ingresamos en la url por el puerto 5000 
 e ingresamos las siguientes operaciones
@@ -78,9 +78,47 @@ value  y su valor va ser de 5,como se puede ver ,  nos ha retornado el JSON con
 la informacion de la operacion y su resultado.
 ![docker-ps](/img/pruebalocal1.png)
 
-#### ln
+#### exp
 Debemos ingresar en el navegador  la operacion exp seguido de la query , en este caso se llama
 value  y su valor va ser de 88,como se puede ver ,  nos ha retornado el JSON con
 la informacion de la operacion y su resultado.
 
 ![docker-ps](/img/pruebalocal2.png)
+
+## AWS
+
+### EC2 
+En aws necesitamos crear una nueva instancia de ec2 
+para ello nos dirigimos  A ec2 , creamos una maquina linux y descargamos las claves,
+una vez esté lista  nos conectamos a traves de ssh y nos debe aparecer lo siguiente
+
+![conexionaws](/img/conexionaws.png)
+
+## pruebas
+
+
+#### ln
+Debemos ingresar en el navegador  la operacion ln  seguido de la query , en este caso se llama
+value  y su valor va ser de 5,como se puede ver ,  nos ha retornado el JSON con
+la informacion de la operacion y su resultado.
+![aws1](/img/pruebaaws1.png)
+
+#### exp
+Debemos ingresar en el navegador  la operacion exp seguido de la query , en este caso se llama
+value  y su valor va ser de 88,como se puede ver ,  nos ha retornado el JSON con
+la informacion de la operacion y su resultado.
+
+![aws2](/img/pruebaaws2.png)
+
+
+## Autor
+[Juan Camilo Posso Guevara](https://github.com/JCPosso)
+## Derechos de Autor
+**©** _Juan Camilo Posso G., Escuela Colombiana de Ingeniería Julio Garavito._
+## Licencia
+Licencia bajo  [GNU General Public License](https://github.com/JCPosso/AREP-2Parcial/blob/master/LICENSE).
+
+
+
+
+
